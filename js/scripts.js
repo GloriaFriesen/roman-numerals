@@ -1,17 +1,16 @@
-var output = ""
+var output = []
 
-var i = 1;
-var v = 5;
-var x = 10;
-var l = 50;
-var c = 100;
-var d = 500;
-var m = 1000
+var romanValue [
+  ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"] // ONES
+  ["X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"] //TENS
+  ["C", "CC", "CCC", "CD" "D", "DC", "DCC", "DCCC", "CM"]//HUNDREDS
+  ["M", "MM", "MMM"]//THOUSANDS
+]
 
 var romanNumeral = function(userInput) {
   if (userInput === 1) {
-    output = one;
-    counsole.log(output);
+    output = "i";
+    console.log(output);
     return output;
   }
 };
