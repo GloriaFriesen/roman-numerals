@@ -9,13 +9,14 @@ var oneThousand = "M"
 
 var romanNumeral = function(userInput) {
   if (userInput === 1) {
-
-    return output();
-  };
+    return output(one);
+    counsole.log(output);
+  }
 
 $(document).ready(function() {
   $("#romanNumerals").submit(function() {
     event.preventDefault();
     var userInput = parseInt($("input#userInput").val());
+    var result = romanNumeral(userInput);
   });
 });
