@@ -21,9 +21,9 @@ debugger;
       return arabicValue[0] === userInput;
     }
     var arabicIndex = arabicValue.findIndex(inputIndex);
-    output = romanValue[0][arabicIndex];
+    output = parseInt(romanValue[0][arabicIndex]);
 
-    var romanEqual = romanValue[0][output];
+    var romanEqual = (romanValue[0][output]);
     console.log(romanEqual);
   }
 };
