@@ -1,20 +1,23 @@
 var output = ""
-var one = "I"
-var five = "V"
-var ten = "X"
-var fifty = "L"
-var oneHundred = "C"
-var fiveHundred = "D"
-var oneThousand = "M"
+
+var i = 1;
+var v = 5;
+var x = 10;
+var l = 50;
+var c = 100;
+var d = 500;
+var m = 1000
 
 var romanNumeral = function(userInput) {
   if (userInput === 1) {
-    return output(one);
+    output = one;
     counsole.log(output);
+    return output;
   }
+};
 
 $(document).ready(function() {
-  $("#romanNumerals").submit(function() {
+  $("form#romanNumerals").submit(function(event) {
     event.preventDefault();
     var userInput = parseInt($("input#userInput").val());
     var result = romanNumeral(userInput);
