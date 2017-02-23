@@ -14,17 +14,19 @@ var arabicValue = [
   ["1000", "2000", "3000"] //THOUSANDS
 ]
 
+var temp = arabicValue[0];
+var arabicIndexNumber = function index(number) {
+  return number === temp;
+}
+temp.findIndex(index);
+
 var romanNumeral = function(userInput) {
 debugger;
   if (userInput <= 9) {
-      function inputIndex(arabicValue) {
-      return arabicValue[0] === userInput;
-    }
-    var arabicIndex = arabicValue.findIndex(inputIndex);
-    output = parseInt(romanValue[0][arabicIndex]);
-
-    var romanEqual = (romanValue[0][output]);
-    console.log(romanEqual);
+      var arabicIndex = arabicIndexNumber(userInput);
+      output = romanValue[0][arabicIndex];
+    alert(output);
+    console.log(output);
   }
 };
 
